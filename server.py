@@ -2,7 +2,7 @@ import zmq
 import requests
 import random
 
-api_key = "wJSmo-AyvJ17QPhrBrdAT_JQSWw9rLcLlH9Mbv6Fc08"
+api_key = "your_api_key" # replace with your key from unsplash
 
 context = zmq.Context()
 socket = context.socket(zmq.REP)
