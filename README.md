@@ -6,6 +6,13 @@
 
 ### How to Receive Data
 
+**Instructions:**
+1. Download both server.py and client.py files. 
+2. Open in your IDE of choice. I used PyCharm. 
+3. Open two terminals. 
+4. Run the server code using the command `python3 server.py`
+5. Run the client code using the command `python3 client.py`
+6. Enter the desired keyword and receive URL. 
 
 
 ### Other Notes
