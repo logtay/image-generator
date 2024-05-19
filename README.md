@@ -3,6 +3,9 @@
 **Communication Contract**
 
 ### How to Request Data (with Example Call)
+To request data, use the client.py code. The client code takes a keyword from the user. The keyword is then used in the get_image(keyword) function, sending the request through the pipeline using ZeroMQ. 
+
+**Example Call:** get_image("spa")
 
 ### How to Receive Data
 
