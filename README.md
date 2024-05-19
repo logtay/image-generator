@@ -27,4 +27,4 @@ Once the server is running and listening for a request, you can begin using the 
 * You must create your own Unsplash API Key using [the Unsplash API developers site](https://unsplash.com/developers). Replace `your_api_key` in the server.py file with your key. 
 
 ### Diagram
-![diagram](Diagram.png)
+![diagram](Diagram.jpg)
