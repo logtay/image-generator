@@ -9,6 +9,8 @@ To request data, use the client.py code. The client code takes a keyword from th
 
 ### How to Receive Data
 
+Once the server is running and listening for a request, you can begin using the micro service. The client.py file takes a keyword and sends it to the server which then interacts with the API. The image URL is then sent back to the client via the ZeroMQ pipeline. 
+
 **Instructions:**
 1. Download both server.py and client.py files. 
 2. Open in your IDE of choice. I used PyCharm. 
