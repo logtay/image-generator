@@ -6,8 +6,10 @@ def get_image(keyword):
     socket = context.socket(zmq.REQ)
     socket.connect("tcp://localhost:5555")
 
+    print(f"Sending {keyword} search request...")
     socket.send_string(keyword) # send the request for the keyword
 
+    print(f"Waiting for response...")
     response = socket.recv_string()
     print(response)
 
