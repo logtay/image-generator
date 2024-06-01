@@ -2,23 +2,27 @@
 
 **Communication Contract**
 
-### How to Request Data (with Example Call)
-To request data, use the client.py code. The client code takes a keyword from the user. The keyword is then used in the get_image(keyword) function, sending the request through the pipeline using ZeroMQ. 
+### How to Request Data (Write your own client):
+1. Make sure pyzmq and request libraries are installed. You can use the following command: `pip3 install pyzmq requests`
 
-**Example Call:** get_image("spa")
+Make sure to import these into your code. 
 
-### How to Receive Data
+2. Set up a ZeroMQ REQ socket. Connect this socket to the server's address. 
+3. Use this socket to send a keyword (string) to the server. 
+4. Wait for and receive the response.
 
-Once the server is running and listening for a request, you can begin using the micro service. The client.py file takes a keyword and sends it to the server which then interacts with the API. The image URL is then sent back to the client via the ZeroMQ pipeline. 
+**Example Call** \
+`get_image("spa")` 
 
-**Instructions:**
-1. Download both server.py and client.py files. 
-2. Open in your IDE of choice. I used PyCharm. 
-3. Open two terminals. 
-4. Run the server code using the command `python3 server.py`
-5. Run the client code using the command `python3 client.py`
-6. Enter the desired keyword and receive URL. 
+### How to Receive Data (Using server.py):
 
+1. Make sure pyzmq and request libraries are installed. You can use the following command: `pip3 install pyzmq requests`
+
+Make sure to import these into your code. 
+
+2. Set up a ZeroMQ REP socket. Connect this socket to the server's address. 
+3. Use this socket to listen for keywords being sent.
+4. Send the keyword to the Unsplash API and send back the response. 
 
 ### Other Notes
 
